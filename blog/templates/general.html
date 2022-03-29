@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+
+    <!-- UI KIT -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
+
+    <title>Duconjunto Notícias</title>
+</head>
+
+<body>
+    {% load static %}
+
+    <div class="wrapper uk-margin-left uk-margin-right">
+        {% include 'topbar.html' %}
+
+        {% block content %}
+        {% endblock %}
+        <div class="push"></div>
+    </div>
+
+    {% include 'footer.html' %}
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
+</body>
+
+<style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+    }
+
+    .wrapper {
+        min-height: 100%;
+        margin-bottom: -40px;
+    }
+
+    .push {
+        height: 40px;
+    }
+</style>

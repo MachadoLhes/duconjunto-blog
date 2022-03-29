@@ -1,0 +1,13 @@
+{% block content %}
+<div class="topbar uk-flex uk-flex-center">
+    {% load static %}
+    <img class="header" data-src="{% static 'blog/images/header.jpg' %}" height="25px" alt="My image" uk-img>
+</div>
+<hr>
+{% endblock %}
+
+<style>
+    .header {
+        max-height: 100px;
+    }
+</style>
